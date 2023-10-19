@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+
+
+body {
+    background: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    width: 500px;
+    padding: 30px;
+    border: 1px solid #ffffff;
+    background: #fff;
+    border-radius: 15px;
+    
+}
+
+.image-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.image-container p {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.button-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    font-family: 'Nanum Gothic', serif;
+    display: block;
+    border: 2px solid #ccc;
+    width: 100%;
+    padding: 18px;
+    font-size: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.footer {
+    font-family: 'Nanum Gothic', serif;
+    font-weight: bold;
+    bottom: 5;
+    left: 0;
+    width: 100%;
+    min-width: 328px;
+    height: 80px;
+    padding: 32px 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: #8f8f8f;
+}
+
+.active-border:focus {
+    border: 2px solid rgb(26, 167, 214);
+    outline: none;
+}
+
+label {
+    font-family: 'Nanum Gothic', serif;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline;
+    padding: 10px 10px 10px 0;
+    text-decoration: none;
+    color: #444;
+}
+
+button {
+    font-family: 'Nanum Gothic', serif;
+    justify-content: center;
+    background: #474747;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: .7;
+    background-color: rgb(26, 167, 214);
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.success {
+    background: #D4EDD4;
+    color: #40754C;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.ca {
+    font-family: 'Nanum Gothic', serif;
+    font-size: 15px;
+    display: inline;
+    padding: 10px 10px 10px 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8f8f8f;
+    transition: background-color 0.3s ease;
+}
+
+.ca:hover {
+    text-decoration: underline;
+    color: rgb(26, 167, 214);
+}

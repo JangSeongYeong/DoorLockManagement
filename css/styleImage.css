@@ -1,0 +1,76 @@
+body {
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.image-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-container p {
+  color: #000000;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+button {
+  float: right;
+  background: #3b77c5;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+}
+
+button:hover {
+  opacity: .7;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.ca {
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #444;
+}
+
+.ca:hover {
+  text-decoration: underline;
+}
+
+form {
+  width: 430px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 15px;
+  margin: 0 auto; /* 가운데 정렬 및 좌우 여백 설정 */
+  max-width: 100%; /* 최대 너비 설정 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+}
