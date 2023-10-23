@@ -31,12 +31,15 @@
 </head>
 <body>
     <form id="myForm" method="POST">
-        <?php 
+        <?php
             // FTP 접속 데이터 가져오기
             include 'CI/ftp_conn.php';
 
             // FTP 속 폴더에서 파일 목록 얻기
             $remoteFiles = ftp_nlist($ftpConnection, $remoteFolder2);
+
+            // 파일 정보 배열 초기화 (안정성 높이기 위해서 추가)
+            $fileInfoArray = array();
             
             // 파일 정보 배열에 저장
             foreach ($remoteFiles as $file) {
