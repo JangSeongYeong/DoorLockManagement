@@ -33,10 +33,9 @@
         <?php if (isset($_GET['uname'])) { ?>
             <input  type="text" 
                     name="uname" 
-                    placeholder="4~15글자로 작성" 
-                    value="<?php echo $_GET['uname']; ?>"><br>
+                    placeholder="4~15글자로 작성"><br>
         <?php }else{ ?>
-            <input  type="text" 
+            <input  type="text"
                     name="uname" 
                     placeholder="4~15글자로 작성"
                     class='active-border'><br>

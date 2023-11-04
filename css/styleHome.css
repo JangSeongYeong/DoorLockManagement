@@ -1,0 +1,49 @@
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+button {
+  font-family: 'Nanum Gothic', serif;
+  float: right;
+  background: #dedede;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #444;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: .7;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    max-width: 400px;
+    padding: 14px;
+    height: 40px;
+    margin: 2px;
+    white-space: nowrap; /*줄바꿈 안 함*/
+    overflow: hidden; /* 너비 벗어나면 숨김 */
+    text-overflow: ellipsis; /* 너비 벗어나는 부분 ... 표시 */
+}
+
+.user-info {
+    display: inline-block;
+}
+
+.logout-link {
+    color: #474747;;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: none;
+}

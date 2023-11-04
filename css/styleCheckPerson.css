@@ -1,0 +1,76 @@
+#myForm{
+    width: 500px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    background: #fff;
+    margin: 0;
+}
+
+/*사용자 사진 스타일*/
+.image-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+label {
+    font-family: 'Nanum Gothic', serif;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #444;
+}
+
+button {
+    font-family: 'Nanum Gothic', serif;
+    float: right;
+    background: #dedede;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #444;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+/*계정 비밀번호 변경 폼 스타일*/
+#user_passwordC{
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    background: white;
+    margin: 0;
+    justify-content: center; /*가로 중앙*/
+    align-items: center; /*세로 중앙*/
+}
+
+#user_passwordC .container{
+    display: flex;
+    justify-content: space-between;
+}

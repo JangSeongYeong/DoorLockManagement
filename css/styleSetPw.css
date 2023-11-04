@@ -1,0 +1,59 @@
+.button-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  border: 2px solid #ccc;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+label {
+  font-family: 'Nanum Gothic', serif;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #444;
+}
+
+button {
+  font-family: 'Nanum Gothic', serif;
+  float: right;
+  background: #dedede;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #444;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: .7;
+}
+
+.button-contain {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.button-contain button {
+  padding: 10px 20px;
+  height: 40px;
+  margin: 0px;
+  border-radius: 0px;
+  background: #fff;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
