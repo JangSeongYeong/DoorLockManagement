@@ -59,3 +59,4 @@ function revertMenuIcon() {
         menuIcon.checked = false;
     }
 }
+

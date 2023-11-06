@@ -42,3 +42,17 @@ button:hover {
     border: none;
     padding: 0;
 }
+
+@media (max-width: 700px){
+    #menuForm {
+        max-width: 400px;
+    }
+    .button-contain {
+        width: 400px;
+        justify-content: left;
+    }
+    .button-contain button {
+        padding: 2rem 0.8rem;
+    }
+    button[name = "home"] { padding: 2rem 1.3rem;}
+}

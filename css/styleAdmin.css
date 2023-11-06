@@ -9,12 +9,10 @@ input {
 
 button {
   font-family: 'Nanum Gothic', serif;
-  float: right;
   background: #dedede;
   padding: 10px 15px;
   font-weight: bold;
   color: #444;
-  border-radius: 5px;
   margin-right: 10px;
   border: none;
   border-radius: 10px;
@@ -27,16 +25,18 @@ button:hover {
 /*pw변경, pw설정 스타일*/
 .button-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .button-container button {
-    max-width: 400px; 
-    padding: 10px;
-    height: 40px;
-    margin: 2px;
-    white-space: nowrap; /*줄바꿈 안 함*/
-    overflow: hidden; /* 너비 벗어나면 숨김 */
-    text-overflow: ellipsis; /* 너비 벗어나는 부분 ... 표시 */
+  max-width: 400px; 
+  padding: 10px;
+  height: 40px;
+  margin: 2px;
+  white-space: nowrap; /*줄바꿈 안 함*/
+  overflow: hidden; /* 너비 벗어나면 숨김 */
+  text-overflow: ellipsis; /* 너비 벗어나는 부분 ... 표시 */
 }
+
+button[name = "DOORPWCHANGE"] { margin-right: 5rem;}

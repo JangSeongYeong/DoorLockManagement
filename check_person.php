@@ -27,12 +27,13 @@
 <html>
 <head>
     <title>Check</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/styleCheckPerson.css">
 </head>
 <body>       
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydownn="return false">
     <form id="myForm" action="check_person_process.php" method="POST">
         <div style="display: flex; align-items: center;">
             <input type="checkbox" id="menuicon">
@@ -78,10 +79,11 @@
         <div class='image-container'>
             <img id='targetImg' onload="e => {e.handleTargetImgUrl()}" alt='user-image' src='<?php echo $imagePath?>'>
         </div> 
-
-        <button type="button" onclick="userImgSwitch()">사용자 변경</button>
-        <button type="submit" name="securityLevel">보안단계 설정</button>
-        <button type="button" onclick="removeHidden('user_passwordC')">계정 비밀번호 변경</button>
+        <div class='userBtm-container'>
+            <button type="button" name="userPicChan" onclick="userImgSwitch()">사용자 변경</button>
+            <button type="submit" name="securityLevel">보안단계 설정</button>
+            <button type="button" onclick="removeHidden('user_passwordC')">계정 비밀번호 변경</button>
+        </div>
     </form>
     
     <!-- 계정 비밀번호 변경 폼 -->
@@ -97,5 +99,8 @@
     </form>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/cacheScript.js"></script>
+    <script type="text/javascript">
+        document.oncontextmenu = function(){return false;}
+    </script>
 </body>
 </html>

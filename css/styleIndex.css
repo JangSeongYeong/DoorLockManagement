@@ -150,3 +150,9 @@ h1 {
     text-decoration: underline;
     color: rgb(26, 167, 214);
 }
+
+@media (max-width: 700px){
+    form {
+        width: 400px;
+    }
+}
