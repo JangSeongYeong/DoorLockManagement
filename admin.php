@@ -34,8 +34,8 @@
 
   if (isset($_POST['DOORPWCHANGE'])) {
     if(isset($_POST['room_number'])){
-      dbUpdateData($connection, 'userManagement', 'pw', '1234');
-      echo "<script>alert('1234으로 설정되었습니다.');</script>";
+      dbUpdateData($connection, 'userManagement', 'pw', '0000');
+      echo "<script>alert('0000으로 설정되었습니다.');</script>";
     }
   }
 
