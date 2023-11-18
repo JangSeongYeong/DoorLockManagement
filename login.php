@@ -15,7 +15,7 @@ try {
         $password = validate($_POST['password']);
 
         if (empty($id)) {
-            header("Location: index.php?error=아이디를 작성해 주세요.");
+            header("Location: index.php?error=객실번호를 작성해 주세요.");
             exit();
         } else if (empty($password)) {
             header("Location: index.php?error=비밀번호를 작성해 주세요.");
@@ -40,7 +40,7 @@ try {
                     exit();
                 }
             } else {
-                header("Location: index.php?error=아이디 또는 비밀번호가 올바르지 않습니다.");
+                header("Location: index.php?error=객실번호 또는 비밀번호가 올바르지 않습니다.");
                 exit();
             }
         }

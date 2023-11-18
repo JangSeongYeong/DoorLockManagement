@@ -12,10 +12,10 @@
             <p class="error"><?php echo $_GET['error']; ?></p>
         <?php } ?>
         
-        <input type="text" name="uname" placeholder="아이디" class='active-border'><br>
+        <input type="text" name="uname" placeholder="객실번호" class='active-border'><br>
         <input type="password" name="password" placeholder="비밀번호" class='active-border'><br>
         <button type="submit">로그인</button>
-        <br><br><a href="signup.php" class="ca">회원가입</a>
+        <!-- <br><br><a href="signup.php" class="ca">회원가입</a> -->
     </form>
 
     <div class="footer">
