@@ -43,13 +43,11 @@ window.onload = function() {
 const HIDDEN_CLASSNAME = "hidden";
 // hidden class 제거
 function removeHidden(element) {
-    let form = document.getElementById(element);
-    form.classList.remove(HIDDEN_CLASSNAME);
+    document.getElementById(element).classList.remove(HIDDEN_CLASSNAME);
 }
 // hidden class 추가
 function addHidden(element) {
-    let form = document.getElementById(element);
-    form.classList.add(HIDDEN_CLASSNAME);
+    document.getElementById(element).classList.add(HIDDEN_CLASSNAME);
 }
 
 // menu icon check 상태 해제
