@@ -39,11 +39,15 @@
             // 파일 정보 얻기
             foreach ($remoteFiles as $file) {
                 $fileInfo = array();
+                if(basename($file) === "." || basename($file) === ".."){
+                    continue;
+                }
                 $fileInfo['name'] = basename($file);
+                //$remoteFolder1 = 'doorLockManagement', $remoteFolder2 = 'facePicture', $remoteFolder3 = 'Picture'
                 $fileInfo['path'] = 'https://' . $ftpServer . '/' . $remoteFolder1 . '/' . $_SESSION['user_name'] . '/' . $remoteFolder3 . '/' . $fileInfo['name'];
                 $fileInfoArray[] = $fileInfo;
             }
-
+            
             // 파일명을 기준으로 내림차순 정렬
             usort($fileInfoArray, function ($a, $b) {
                 return strcmp($b['name'], $a['name']);
@@ -59,8 +63,8 @@
                 $imageId = 'img' . $counter; // 이미지 id 생성
 
                 echo "<div id='$imageId' class='image-container";
-                 // 4개 이상의 이미지를 숨김
-                if ($counter >= 4) {
+                 // 5개 이상의 이미지를 숨김
+                if ($counter > 4) {
                     echo " hidden";
                 }
                 echo "'>";
@@ -69,25 +73,30 @@
                 echo "</div>";
                 $counter++;
             }
-        
+            
             // FTP 접속 종료
             ftp_close($ftpConnection);
         ?>
-        <div id="moreView">
+        <div id="moreView" class="hidden">
             <br><br><br>
             <button type="button" id="moreViewBtn" onclick="imgHiddenOff()">사진 더 보기</button>
         </div>
     </form>
     <script src="js/common_function.js"></script>
     <script>
+        const counter = <?php echo $counter?>;
+        if(counter >= 6){
+            removeHidden('moreView');
+        }
+        
         // 더 보기를 누름으로써 hidden되어있는 사진들 보이게
         function imgHiddenOff(){
-            let count = 4;
-            for(count; (count<=<?php echo $counter ?>-3); count++){
-                removeHidden('img' + count);
+            for(let count=5; count<=counter; count++){
+                removeHidden(('img' + count));
+                addHidden('moreView');
             }
-            addHidden('moreView');
         }
+        
     </script>
 </body>
 </html>
